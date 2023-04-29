@@ -19,7 +19,7 @@ function buildScripts() {
     .pipe(gulp.dest('./dist/script/'))
 }
 
-exports.default = gulp.parallel(buildStyles, buildScripts);
+exports.default = buildStyles;
 exports.watch   = function () {
     return gulp.watch('./src/styles/*.scss', buildStyles)
 }
