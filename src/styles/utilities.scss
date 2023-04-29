@@ -1,0 +1,60 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+/*Fonts*/
+$fontFamily: 'Open Sans', sans-serif;
+$fontColorWhite: #FFFFFF;
+$fontColorDarkGray: #777777;
+$fontColorLightGray: #d1d1d1;
+
+/*Backgrounds*/
+$backgroundColorDark : #141414;
+$backgroundColorDarkGray : #333333;
+$backgroundColorDarkHover : #1e1e1e;
+$backgroundColorDarkOpacity50 : #141414a3;
+$borderColorGrayOpacity80 : #c8c8c8cc;
+$borderColorGraySmooth : #404040;
+$backgroundColorWhite : #d9d9d9;
+$backgroundColorWhiteHover : #c8c8c8;
+
+
+/*Buttons and special texts Color*/
+$specialHighlightedText: #46d369;
+$specialHighlightedTextboxYellow: #e7792b;
+$specialHighlightedTextboxRed: #e50914;
+
+
+$linearBackgroundGradient: linear-gradient(90deg,#141414,transparent 50%);
+$webBackgroundGradient:-webkit-linear-gradient(90deg,#141414, transparent 50%);
+
+@mixin hero_bg($url:'http://via.placeholder.com/1028x720') {
+    background: $linearBackgroundGradient, url($url);
+    background: $webBackgroundGradient,url($url);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@mixin dflex ($alignItems: center, $justifyContent: center) {
+    display: flex;
+    align-items: $alignItems;
+    justify-content: $justifyContent;
+}
+
+@mixin setTamanho($width: 10px, $heigth: 10px) {
+    width: $width;
+    height: $heigth;
+    
+}
+
+@mixin TextBox($paddingY: 4px, $paddingX: 4px, $borderR: 2px, $marginR: 8px) {
+    font-weight: 700;
+    text-align: center;
+    padding: $paddingY $paddingX;
+    border-radius: $borderR;
+    margin-right: $marginR;
+}
+
+                   
+                    
+                    
